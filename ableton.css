@@ -507,6 +507,9 @@ header.sticky .submit2 {
     grid-template-columns: repeat(auto-fit, minmax(220px,auto));
     gap: 1.5rem;
     justify-content: center;
+    margin: 2rem !important;
+
+}
 }
 .product-box {
     position: relative;
