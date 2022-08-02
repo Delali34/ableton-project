@@ -507,9 +507,6 @@ header.sticky .submit2 {
     grid-template-columns: repeat(auto-fit, minmax(220px,auto));
     gap: 1.5rem;
     justify-content: center;
-    margin: 2rem !important;
-
-}
 }
 .product-box {
     position: relative;
@@ -1449,139 +1446,140 @@ header.sticky .submit2 {
         
 }
 
-.navbar a{
-    padding: 0px;
-    font-size: 20px;
-    display: flex;
-    
-}
-.navbar .logo{
-    display: flex;
-    font-size: 5px;
-}
-.fashion {
-    background-color: gold;
-    height: 100px;
-    border-top: 2px solid rgb(255, 255, 255);
-    padding: 0px;
-    
-}
-.fashion .container{
-    height: 100%;
-    display: flex;
-    margin-left: -30px;
-}
-.fashion .image2 {
-    height: 200px;
-    width: 200px;
-    margin-left: 0px;
-    margin-top: 60px;
-    
-    
-}
-.fashion h1 {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-.text {
-    font-size: 10px;
-}
-.text i {
-  font-size: 15px;  
-  color: black;
-}
-.Gadgets{
-    background-color: orange;
-    height: 100px;
+    .navbar a{
+        padding: 0px;
+        font-size: 20px;
+        display: flex;
+        
+    }
+    .navbar .logo{
+        display: flex;
+        font-size: 5px;
+    }
+    .fashion {
+        background-color: gold;
+        height: 100px;
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+        
+    }
+    .fashion .container{
+        height: 100%;
+        display: flex;
+        margin-left: -30px;
+    }
+    .fashion .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 60px;
+        
+        
+    }
+    .fashion h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .text {
+        font-size: 10px;
+    }
+    .text i {
+    font-size: 15px;  
+    color: black;
+    }
+    .Gadgets{
+        background-color: orange;
+        height: 100px;
 
-    border-top: 2px solid rgb(255, 255, 255);
-    padding: 0px;
-}
-.Gadgets .container{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
-.Gadgets .image {
-    height: 150px;
-    width: 150px;
-    margin-top: 60px;
-    margin-right: 0px;
-    
-}
-.Gadgets h1 {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-.Groceries {
-    background-color: #92CB3F;
-    height: 100px;
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+    }
+    .Gadgets .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .Gadgets .image {
+        height: 150px;
+        width: 150px;
+        margin-top: 60px;
+        margin-right: 0px;
+        
+    }
+    .Gadgets h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .Groceries {
+        background-color: #92CB3F;
+        height: 100px;
 
-    border-top: 2px solid rgb(255, 255, 255);
-    padding: 0px;
-}
-.Groceries .image2 {
-    height: 200px;
-    width: 200px;
-    margin-left: 0px;
-    margin-top: 40px;
-}
-.Groceries .container{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
-.Groceries h1 {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-.sliders {
-    background: gold;
-    height: 150px;
-}
-.caro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.caro :nth-child(3){
-    width: 50px;
-    height: 50px;
-    margin-right: -20px;
-}
-.caro :nth-child(1){
-    margin-left: -50px;
-    margin-bottom: -5px;
-}
-.caro img {
-    width: 180px;
-    height: 100px;
-    margin-left: 0px;
-}
-.caro h2 {
-    font-size: 25px;
-    margin-left: -30px;
-    font-weight: bold;
-}
-#timer {
-    text-align: center;
-    justify-content: center;
-    margin: 5px -50px 5px 0px;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    margin-left: -60px;
-    background-color: white;
-    height: 40px;
-    align-items: center;
-    padding: 5px;
-    font-weight: bold;
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+    }
+    .Groceries .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .Groceries .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .Groceries h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .sliders {
+        background: gold;
+        height: 150px;
+    }
+    .caro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caro :nth-child(3){
+        width: 50px;
+        height: 50px;
+        margin-right: -20px;
+    }
+    .caro :nth-child(1){
+        margin-left: -50px;
+        margin-bottom: -5px;
+    }
+    .caro img {
+        width: 180px;
+        height: 100px;
+        margin-left: 0px;
+    }
+    .caro h2 {
+        font-size: 25px;
+        margin-left: -30px;
+        font-weight: bold;
+    }
+    #timer {
+        text-align: center;
+        justify-content: center;
+        margin: 5px -50px 5px 0px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        margin-left: -60px;
+        background-color: white;
+        height: 40px;
+        align-items: center;
+        padding: 5px;
+        font-weight: bold;
 
+    }
 }
-}
+
 
 
 
