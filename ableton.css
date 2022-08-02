@@ -603,6 +603,12 @@ header.sticky .submit2 {
     .shop-products {
         margin: 0rem !important;
     }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
 .navbar .logo {
     margin-left: -20px;
 }
@@ -776,6 +782,12 @@ header.sticky .submit2 {
         margin-left: -40px;
     
 }
+.product-img {
+    width: 203px;
+    height: 210px;
+    margin-bottom: 0.5rem;
+    background: #dadbf1;
+}
 .container {
     margin: 0 auto;
     width: 100%;
@@ -814,6 +826,12 @@ header.sticky .submit2 {
         margin: 0 auto;
         width: 100%;
     }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
     .navbar a{
         padding: 10px;
         margin: 0 5px;
@@ -850,6 +868,12 @@ header.sticky .submit2 {
     @media (max-width : 500px){
         .navbar{
             padding: 11px;
+        }
+        .product-img {
+            width: 203px;
+            height: 210px;
+            margin-bottom: 0.5rem;
+            background: #dadbf1;
         }
         .container {
             margin: 0 auto;
@@ -1021,46 +1045,8 @@ header.sticky .submit2 {
     }
     
     }
-    @media (max-width : 360px){
-        
-        .shop-products {
-            margin: 0rem !important;
-        }
-        
-        .navbar .logo {
-            margin-left: -40px;
-        
-    }
-    .container {
-        margin: 0 auto;
-        width: 100%;
-    }
-    .Gadgets .image {
-        height: 130px;
-        width: 130px;
-        margin-top: 50px;
-        margin-right: -20px;
-        
-    }
-    .Gadgets h1 {
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-    }
-    .Groceries .image2 {
-        height: 200px;
-        width: 200px;
-        margin-left: -40px;
-        margin-top: 40px;
-    }
-    .fashion .image2 {
-        height: 200px;
-        width: 200px;
-        margin-left: -30px;
-        margin-top: 60px;
-        
-        
-    }
-    }
+   
+
 @media (max-width : 600px){
     .navbar{
         padding: 11px;
@@ -1071,6 +1057,12 @@ header.sticky .submit2 {
     }
     .shop-products {
         margin: 0rem !important;
+    }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
     }
 .navbar .logo {
     margin-left: -20px;
@@ -1245,6 +1237,12 @@ header.sticky .submit2 {
     .shop-products {
         margin: 0rem !important;
     }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
 .navbar .logo {
     margin-left: -20px;
 }
@@ -1417,6 +1415,12 @@ header.sticky .submit2 {
     }
     .shop-products {
         margin: 1rem !important;
+    }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
     }
 .navbar .logo {
     margin-left: -20px;
