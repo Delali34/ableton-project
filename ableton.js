@@ -57,3 +57,7 @@ var swiper = new Swiper(".swiper-container", {
     timerEl.textContent = 'STARTS IN' + ' ' +   minutes + ":" + seconds ;
     time--;
    }
+   $(window).on('load', function(){
+    $(".loader").fadeOut(1000);
+    $(".content").fadeIn(1000);
+   })
