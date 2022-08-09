@@ -1,3 +1,1886 @@
+<<<<<<< HEAD
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+.loader {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.loader>i {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: gold;
+    opacity: 1;
+    animation: fade 1s infinite ;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0.3 }
+  50% { opacity: 1 }
+}
+
+    
+
+
+    
+
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+body{
+    font-family:'Poppins', sans-serif;
+    line-height: 1.6;
+
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+img {
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+.navbar {
+    /* background-color: black; */
+    color: white;
+    height: 100px;
+}
+.navbar .flex {
+    justify-content: space-between;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0px 40px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navbar .logo{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar .logo i {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 25px;
+    color: gold;
+   
+}
+.navbar .logo i:hover{
+    transition: 0.5s;
+    color: white;
+}
+
+
+.navbar ul {
+    display: flex;
+}
+.navbar a{
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 22px;
+    
+}
+.submit {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 47.33px;
+    color: white;
+    padding: 10px;
+    margin:  -4px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    background: black;
+
+    
+}
+.submit2
+{
+
+    border-radius: 10px;
+    height: 47.33px;
+    color: black;
+    padding: 10px;
+    margin:  -4px 15px;
+    font-size: 22px;
+    cursor: pointer;
+}.sign-in {
+    border: 1px solid gold;
+    border-radius: 10px;
+    background-color: gold;
+    color: black;
+    
+}
+.sign-in:hover{
+    transition: 0.5s;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    
+}
+/* cart-content */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px;
+    background: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+.cart.active {
+    right: 0;
+}
+.cart-title {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+.cart-title::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: gold;
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.cart-title:hover::after{
+    left: 0%;
+    width: 15%;
+}
+.cart-sign{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+.cart-sign::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: gold;
+    position: absolute;
+    bottom: -12%;
+    left: 0%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+.cart-sign:hover::after{
+    left: 0%;
+    width: 20%;
+}
+.new-products {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+.new-products::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: gold;
+    position: absolute;
+    bottom: -12%;
+    left: 0%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+.new-products:hover::after{
+    left: 0%;
+    width: 35%;
+}
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+    background: #dadbf1;
+}
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cart-price {
+    font-weight: 500;
+
+}
+.cart-quantity {
+    border: 1px solid black;
+    outline-color: black ;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 1.5rem;
+    color: gold;
+    cursor: pointer;
+}
+.cart-remove:hover {
+    color: black;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.total-price {
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: gold;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover {
+    background: #dadbf1;
+    /* color: white; */
+}
+#cart-close {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+/* navbar */
+
+/* hero*/
+.hero {
+    background-color: #dadbf1;
+    color: black;
+    height: 700px;
+    overflow: hidden;
+}
+.trend {
+    text-align: center;
+    padding-top: 140px;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+section .card .image {
+    height: 140px;
+    width: 140px;
+  
+}
+section .card .image img{
+    margin-top: -20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+
+}
+.card::before {
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: gold;
+    border-radius: 20px 20px 0 0;
+}
+.card {
+    position: relative;
+    margin-top: 40px;
+    background: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 350px;
+}
+.card .card-connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    z-index: 100000;
+}
+.card .star-icons {
+    color: goldenrod;
+}
+.card .product-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+.card #add-item {
+    font-size: 14px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+.card #add-item:hover{
+    outline: 1px solid goldenrod;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    -webkit-box-reflect: below 0.2px linear-gradient(transparent,transparent,#0001);
+    
+  }
+  .swiper-3d{
+    perspective: 1200px;
+  }
+ /* sidebar */
+
+ /* sticky header */
+ header.sticky{
+    background: black;
+ }
+ header.sticky a {
+    color: white;
+}
+header.sticky .submit {
+    border: 1px solid rgb(255, 255, 255);
+}
+header.sticky .submit2 {
+    color: white;
+}
+/* sticky header */
+
+
+
+/* hero*/
+/*adverts*/
+.fashion {
+    background-color: gold;
+    height: 300px;
+    border-top: 2px solid rgb(255, 255, 255);
+    margin-top: -25px;
+    
+
+    
+    
+}
+.fashion .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.fashion .image2 {
+    height: 500px;
+    width: 500px;
+    margin-left: -200px;
+    margin-top: 132px;
+    
+}
+.fashion h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.text {
+    font-size: 30px;
+}
+.text i {
+  font-size: 40px;  
+  color: black;
+}
+.Gadgets{
+    background-color: orange;
+    height: 300px;
+
+    border-top: 2px solid rgb(255, 255, 255);
+}
+.Gadgets .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Gadgets .image {
+    height: 400px;
+    width: 400px;
+    margin-top: 132px;
+    margin-right: -65px;
+    
+}
+.Gadgets h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.Groceries {
+    background-color: #92CB3F;
+    height: 300px;
+
+    border-top: 2px solid rgb(255, 255, 255);
+}
+.Groceries .image2 {
+    height: 700px;
+    width: 700px;
+    margin-left: -100px;
+    margin-top: 227px;
+}
+.Groceries .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Groceries h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+/* new products*/
+.section-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    
+}
+.section-title span{
+    border-bottom: 2px solid gold;
+}
+.products {
+    margin: 40px;
+
+}
+.shop-products  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    gap: 1.5rem;
+    justify-content: center;
+   
+}
+.product-box {
+    position: relative;
+    padding: 8px;
+
+}
+.product-box:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+.product-img {
+    width: 215px;
+    height: 220px;
+    margin-bottom: 0.5rem;
+    background: #dadbf1;
+}
+.product-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price {
+    font-weight: 500;
+}
+.add-cart  {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: o;
+    right: 0;
+    background: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+/* new products*/
+/* fashion section*/
+.sliders {
+    background: gold;
+    height: 150px;
+}
+.caro {
+    display: flex;
+}
+.caro img {
+    width: 240px;
+    height: 150px;
+}
+.caro :nth-child(4){
+    margin-left: 20px;
+}
+.caro h2 {
+    font-size: 70px;
+}
+#timer {
+    text-align: center;
+    justify-content: center;
+    margin-top: -55px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-left: -60px;
+    background-color: white;
+    height: 40px;
+    align-items: center;
+
+}
+
+
+/* responsiveness */
+@media (max-width :1080px){
+    .navbar {
+        padding: 15px;
+    }
+    section{
+        padding: 0rem 0 2rem;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .shop-products {
+        margin: 2rem !important;
+    }
+}
+@media (max-width : 400px){
+    .navbar{
+        padding: 11px;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .shop-products {
+        margin: 0rem !important;
+    }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
+.navbar .logo {
+    margin-left: -20px;
+}
+    .navbar .logo i {
+        padding: 0px 0px;
+        cursor: pointer;
+        font-size: 20px;
+        color: gold;
+       
+    }
+    
+    .navbar h1 {
+        font-size: 5px;
+    }
+    .submit {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        height: 80%;
+        width: 130px;
+        color: white;
+        margin:  4px 15px;
+        font-size: 12px;
+        cursor: pointer;
+        background: black;
+        text-align: center;
+        align-items: center;
+        
+}
+
+.navbar a{
+    padding: 0px;
+    font-size: 20px;
+    display: flex;
+    
+}
+.navbar .logo{
+    display: flex;
+    font-size: 5px;
+}
+.fashion {
+    background-color: gold;
+    height: 100px;
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+    
+}
+.fashion .container{
+    height: 100%;
+    display: flex;
+    margin-left: -30px;
+}
+.fashion .image2 {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 60px;
+    
+    
+}
+.fashion h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.text {
+    font-size: 10px;
+}
+.text i {
+  font-size: 15px;  
+  color: black;
+}
+.Gadgets{
+    background-color: orange;
+    height: 100px;
+
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+}
+.Gadgets .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Gadgets .image {
+    height: 150px;
+    width: 150px;
+    margin-top: 60px;
+    margin-right: 0px;
+    
+}
+.Gadgets h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.Groceries {
+    background-color: #92CB3F;
+    height: 100px;
+
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+}
+.Groceries .image2 {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 40px;
+}
+.Groceries .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Groceries h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.sliders {
+    background: gold;
+    height: 150px;
+}
+.caro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caro :nth-child(3){
+    width: 50px;
+    height: 50px;
+    margin-right: -20px;
+}
+.caro :nth-child(1){
+    margin-left: -50px;
+    margin-bottom: -5px;
+}
+.caro img {
+    width: 130px;
+    height: 100px;
+    margin-left: 0px;
+}
+.caro h2 {
+    font-size: 25px;
+    margin-left: -30px;
+    font-weight: bold;
+}
+#timer {
+    text-align: center;
+    justify-content: center;
+    margin: 5px -50px 5px 0px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-left: -60px;
+    background-color: white;
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+}
+@media (max-width : 360px){
+    
+    .shop-products {
+        margin: 0rem !important;
+    }
+    
+    .navbar .logo {
+        margin-left: -40px;
+    
+}
+.product-img {
+    width: 203px;
+    height: 210px;
+    margin-bottom: 0.5rem;
+    background: #dadbf1;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+.Gadgets .image {
+    height: 130px;
+    width: 130px;
+    margin-top: 50px;
+    margin-right: -20px;
+    
+}
+.Gadgets h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.Groceries .image2 {
+    height: 200px;
+    width: 200px;
+    margin-left: -40px;
+    margin-top: 40px;
+}
+.fashion .image2 {
+    height: 200px;
+    width: 200px;
+    margin-left: -30px;
+    margin-top: 60px;
+}
+    
+    .sliders {
+        background: gold;
+        height: 150px;
+    }
+    .caro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caro :nth-child(3){
+        width: 50px;
+        height: 50px;
+        margin-right: -20px;
+    }
+    .caro :nth-child(1){
+        margin-left: -50px;
+        margin-bottom: -5px;
+    }
+    .caro img {
+        width: 180px;
+        height: 100px;
+        margin-left: 0px;
+    }
+    .caro h2 {
+        font-size: 25px;
+        margin-left: -30px;
+        font-weight: bold;
+    }
+    #timer {
+        text-align: center;
+        justify-content: center;
+        margin: 5px -50px 5px 0px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        margin-left: -60px;
+        background-color: white;
+        height: 40px;
+        align-items: center;
+        padding: 5px;
+        font-weight: bold;}
+
+    }
+
+@media (max-width : 375px){
+    .shop-products {
+        margin: 0rem !important;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
+    .navbar a{
+        padding: 10px;
+        margin: 0 5px;
+        font-size: 22px;
+        
+    }
+    .Gadgets h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .Groceries .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: -40px;
+        margin-top: 40px;
+    }
+    .fashion .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: -30px;
+        margin-top: 60px;
+        
+        
+    }
+    .Gadgets .image {
+        height: 120px;
+        width: 120px;
+        margin-top: 50px;
+        margin-right: -20px;
+        
+    }
+    .sliders {
+        background: gold;
+        height: 150px;
+    }
+    .caro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caro :nth-child(3){
+        width: 50px;
+        height: 50px;
+        margin-right: -20px;
+    }
+    .caro :nth-child(1){
+        margin-left: -50px;
+        margin-bottom: -5px;
+    }
+    .caro img {
+        width: 180px;
+        height: 100px;
+        margin-left: 0px;
+    }
+    .caro h2 {
+        font-size: 25px;
+        margin-left: -30px;
+        font-weight: bold;
+    }
+    #timer {
+        text-align: center;
+        justify-content: center;
+        margin: 5px -50px 5px 0px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        margin-left: -60px;
+        background-color: white;
+        height: 40px;
+        align-items: center;
+        padding: 5px;
+        font-weight: bold;
+
+}
+    }
+    @media (max-width : 500px){
+        .navbar{
+            padding: 11px;
+        }
+        .product-img {
+            width: 203px;
+            height: 210px;
+            margin-bottom: 0.5rem;
+            background: #dadbf1;
+        }
+        .container {
+            margin: 0 auto;
+            width: 100%;
+        }
+        .shop-products {
+            margin: 0rem !important;
+        }
+    .navbar .logo {
+        margin-left: -20px;
+    }
+        .navbar .logo i {
+            padding: 0px 0px;
+            cursor: pointer;
+            font-size: 20px;
+            color: gold;
+           
+        }
+        
+        .navbar h1 {
+            font-size: 5px;
+        }
+        .submit {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            height: 80%;
+            width: 130px;
+            color: white;
+            margin:  4px 15px;
+            font-size: 12px;
+            cursor: pointer;
+            background: black;
+            text-align: center;
+            align-items: center;
+            
+    }
+    
+    .navbar a{
+        padding: 0px;
+        font-size: 20px;
+        display: flex;
+        
+    }
+    .navbar .logo{
+        display: flex;
+        font-size: 5px;
+    }
+    .fashion {
+        background-color: gold;
+        height: 100px;
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+        
+    }
+    .fashion .container{
+        height: 100%;
+        display: flex;
+        margin-left: -30px;
+    }
+    .fashion .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 60px;
+        
+        
+    }
+    .fashion h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .text {
+        font-size: 10px;
+    }
+    .text i {
+      font-size: 15px;  
+      color: black;
+    }
+    .Gadgets{
+        background-color: orange;
+        height: 100px;
+    
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+    }
+    .Gadgets .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .Gadgets .image {
+        height: 150px;
+        width: 150px;
+        margin-top: 60px;
+        margin-right: 0px;
+        
+    }
+    .Gadgets h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .Groceries {
+        background-color: #92CB3F;
+        height: 100px;
+    
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+    }
+    .Groceries .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .Groceries .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .Groceries h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .sliders {
+        background: gold;
+        height: 150px;
+    }
+    .caro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caro :nth-child(3){
+        width: 50px;
+        height: 50px;
+        margin-right: -20px;
+    }
+    .caro :nth-child(1){
+        margin-left: -50px;
+        margin-bottom: -5px;
+    }
+    .caro img {
+        width: 130px;
+        height: 100px;
+        margin-left: 0px;
+    }
+    .caro h2 {
+        font-size: 15px;
+        margin-left: -30px;
+        font-weight: bold;
+    }
+    #timer {
+        text-align: center;
+        justify-content: center;
+        margin: 5px -50px 5px 0px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        margin-left: -60px;
+        background-color: white;
+        height: 40px;
+        align-items: center;
+        padding: 5px;
+        font-weight: bold;
+    
+    }
+    
+    }
+   
+
+@media (max-width : 600px){
+    .navbar{
+        padding: 11px;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .shop-products {
+        margin: 0rem !important;
+    }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
+.navbar .logo {
+    margin-left: -20px;
+}
+    .navbar .logo i {
+        padding: 0px 0px;
+        cursor: pointer;
+        font-size: 20px;
+        color: gold;
+       
+    }
+    
+    .navbar h1 {
+        font-size: 5px;
+    }
+    .submit {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        height: 80%;
+        width: 130px;
+        color: white;
+        margin:  4px 15px;
+        font-size: 12px;
+        cursor: pointer;
+        background: black;
+        text-align: center;
+        align-items: center;
+        
+}
+
+.navbar a{
+    padding: 0px;
+    font-size: 20px;
+    display: flex;
+    
+}
+.navbar .logo{
+    display: flex;
+    font-size: 5px;
+}
+.fashion {
+    background-color: gold;
+    height: 100px;
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+    
+}
+.fashion .container{
+    height: 100%;
+    display: flex;
+    margin-left: -30px;
+}
+.fashion .image2 {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 60px;
+    
+    
+}
+.fashion h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.text {
+    font-size: 10px;
+}
+.text i {
+  font-size: 15px;  
+  color: black;
+}
+.Gadgets{
+    background-color: orange;
+    height: 100px;
+
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+}
+.Gadgets .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Gadgets .image {
+    height: 150px;
+    width: 150px;
+    margin-top: 60px;
+    margin-right: 0px;
+    
+}
+.Gadgets h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.Groceries {
+    background-color: #92CB3F;
+    height: 100px;
+
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+}
+.Groceries .image2 {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 40px;
+}
+.Groceries .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Groceries h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.sliders {
+    background: gold;
+    height: 150px;
+}
+.caro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caro :nth-child(3){
+    width: 50px;
+    height: 50px;
+    margin-right: -20px;
+}
+.caro :nth-child(1){
+    margin-left: -50px;
+    margin-bottom: -5px;
+}
+.caro img {
+    width: 180px;
+    height: 100px;
+    margin-left: 0px;
+}
+.caro h2 {
+    font-size: 25px;
+    margin-left: -30px;
+    font-weight: bold;
+}
+#timer {
+    text-align: center;
+    justify-content: center;
+    margin: 5px -50px 5px 0px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-left: -60px;
+    background-color: white;
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+
+}
+}
+@media (max-width : 700px){
+    .navbar{
+        padding: 11px;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .shop-products {
+        margin: 0rem !important;
+    }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
+.navbar .logo {
+    margin-left: -20px;
+}
+    .navbar .logo i {
+        padding: 0px 0px;
+        cursor: pointer;
+        font-size: 20px;
+        color: gold;
+       
+    }
+    
+    .navbar h1 {
+        font-size: 5px;
+    }
+    .submit {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        height: 80%;
+        width: 130px;
+        color: white;
+        margin:  4px 15px;
+        font-size: 12px;
+        cursor: pointer;
+        background: black;
+        text-align: center;
+        align-items: center;
+        
+}
+
+.navbar a{
+    padding: 0px;
+    font-size: 20px;
+    display: flex;
+    
+}
+.navbar .logo{
+    display: flex;
+    font-size: 5px;
+}
+.fashion {
+    background-color: gold;
+    height: 100px;
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+    
+}
+.fashion .container{
+    height: 100%;
+    display: flex;
+    margin-left: -30px;
+}
+.fashion .image2 {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 60px;
+    
+    
+}
+.fashion h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.text {
+    font-size: 10px;
+}
+.text i {
+  font-size: 15px;  
+  color: black;
+}
+.Gadgets{
+    background-color: orange;
+    height: 100px;
+
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+}
+.Gadgets .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Gadgets .image {
+    height: 150px;
+    width: 150px;
+    margin-top: 60px;
+    margin-right: 0px;
+    
+}
+.Gadgets h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.Groceries {
+    background-color: #92CB3F;
+    height: 100px;
+
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 0px;
+}
+.Groceries .image2 {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 40px;
+}
+.Groceries .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.Groceries h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.sliders {
+    background: gold;
+    height: 150px;
+}
+.caro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caro :nth-child(3){
+    width: 50px;
+    height: 50px;
+    margin-right: -20px;
+}
+.caro :nth-child(1){
+    margin-left: -50px;
+    margin-bottom: -5px;
+}
+.caro img {
+    width: 140px;
+    height: 100px;
+    margin-left: 0px;
+}
+.caro h2 {
+    font-size: 25px;
+    margin-left: -30px;
+    font-weight: bold;
+}
+#timer {
+    text-align: center;
+    justify-content: center;
+    margin: 5px -50px 5px 0px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-left: -60px;
+    background-color: white;
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+
+}
+}
+@media (max-width : 800px){
+    .navbar{
+        padding: 11px;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .shop-products {
+        margin: 1rem !important;
+    }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
+.navbar .logo {
+    margin-left: -20px;
+}
+    .navbar .logo i {
+        padding: 0px 0px;
+        cursor: pointer;
+        font-size: 20px;
+        color: gold;
+       
+    }
+    
+    .navbar h1 {
+        font-size: 5px;
+    }
+    .submit {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        height: 80%;
+        width: 130px;
+        color: white;
+        margin:  4px 15px;
+        font-size: 12px;
+        cursor: pointer;
+        background: black;
+        text-align: center;
+        align-items: center;
+        
+}
+
+    .navbar a{
+        padding: 0px;
+        font-size: 20px;
+        display: flex;
+        
+    }
+    .navbar .logo{
+        display: flex;
+        font-size: 5px;
+    }
+    .fashion {
+        background-color: gold;
+        height: 100px;
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+        
+    }
+    .fashion .container{
+        height: 100%;
+        display: flex;
+        margin-left: -30px;
+    }
+    .fashion .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 60px;
+        
+        
+    }
+    .fashion h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .text {
+        font-size: 10px;
+    }
+    .text i {
+    font-size: 15px;  
+    color: black;
+    }
+    .Gadgets{
+        background-color: orange;
+        height: 100px;
+
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+    }
+    .Gadgets .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .Gadgets .image {
+        height: 150px;
+        width: 150px;
+        margin-top: 60px;
+        margin-right: 0px;
+        
+    }
+    .Gadgets h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .Groceries {
+        background-color: #92CB3F;
+        height: 100px;
+
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+    }
+    .Groceries .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .Groceries .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .Groceries h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .sliders {
+        background: gold;
+        height: 150px;
+    }
+    .caro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caro :nth-child(3){
+        width: 50px;
+        height: 50px;
+        margin-right: -20px;
+    }
+    .caro :nth-child(1){
+        margin-left: -50px;
+        margin-bottom: -5px;
+    }
+    .caro img {
+        width: 180px;
+        height: 100px;
+        margin-left: 0px;
+    }
+    .caro h2 {
+        font-size: 25px;
+        margin-left: -30px;
+        font-weight: bold;
+    }
+    #timer {
+        text-align: center;
+        justify-content: center;
+        margin: 5px -50px 5px 0px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        margin-left: -60px;
+        background-color: white;
+        height: 40px;
+        align-items: center;
+        padding: 5px;
+        font-weight: bold;
+
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1030px) {
+    .navbar{
+        padding: 11px;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .shop-products {
+        margin: 1rem !important;
+    }
+    .product-img {
+        width: 203px;
+        height: 210px;
+        margin-bottom: 0.5rem;
+        background: #dadbf1;
+    }
+.navbar .logo {
+    margin-left: -20px;
+}
+    .navbar .logo i {
+        padding: 0px 0px;
+        cursor: pointer;
+        font-size: 20px;
+        color: gold;
+       
+    }
+    
+    .navbar h1 {
+        font-size: 5px;
+    }
+    .submit {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        height: 80%;
+        width: 130px;
+        color: white;
+        margin:  4px 15px;
+        font-size: 12px;
+        cursor: pointer;
+        background: black;
+        text-align: center;
+        align-items: center;
+        
+}
+
+    .navbar a{
+        padding: 0px;
+        font-size: 20px;
+        display: flex;
+        
+    }
+    .navbar .logo{
+        display: flex;
+        font-size: 5px;
+    }
+    .fashion {
+        background-color: gold;
+        height: 100px;
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+        
+    }
+    .fashion .container{
+        height: 100%;
+        display: flex;
+        margin-left: -30px;
+    }
+    .fashion .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 60px;
+        
+        
+    }
+    .fashion h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .text {
+        font-size: 10px;
+    }
+    .text i {
+    font-size: 15px;  
+    color: black;
+    }
+    .Gadgets{
+        background-color: orange;
+        height: 100px;
+
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+    }
+    .Gadgets .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .Gadgets .image {
+        height: 150px;
+        width: 150px;
+        margin-top: 60px;
+        margin-right: 0px;
+        
+    }
+    .Gadgets h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .Groceries {
+        background-color: #92CB3F;
+        height: 100px;
+
+        border-top: 2px solid rgb(255, 255, 255);
+        padding: 0px;
+    }
+    .Groceries .image2 {
+        height: 200px;
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .Groceries .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .Groceries h1 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .sliders {
+        background: gold;
+        height: 150px;
+    }
+    .caro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caro :nth-child(3){
+        width: 50px;
+        height: 50px;
+        margin-right: -20px;
+    }
+    .caro :nth-child(1){
+        margin-left: -50px;
+        margin-bottom: -5px;
+    }
+    .caro img {
+        width: 180px;
+        height: 100px;
+        margin-left: 0px;
+    }
+    .caro h2 {
+        font-size: 25px;
+        margin-left: -30px;
+        font-weight: bold;
+    }
+    #timer {
+        text-align: center;
+        justify-content: center;
+        margin: 5px -50px 5px 0px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        margin-left: -60px;
+        background-color: white;
+        height: 40px;
+        align-items: center;
+        padding: 5px;
+        font-weight: bold;
+
+    }
+}
+
+
+
+
+/* sidebar */
+=======
 *{
     box-sizing: border-box;
     padding: 0;
@@ -1881,3 +3764,4 @@ header.sticky .submit2 {
 
 
 /* sidebar */
+>>>>>>> f53588511dd67462e0882ef0b7099efc7bf67958
