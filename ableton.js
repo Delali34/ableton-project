@@ -28,6 +28,8 @@ var swiper = new Swiper(".swiper-container", {
   let addCart = document.querySelector('#add-cart')
   let Cart = document.querySelector('.cart')
   let closeCart = document.querySelector('#cart-close')
+  
+
 
 //open cart
   addCart.onclick = function(){
@@ -36,7 +38,9 @@ var swiper = new Swiper(".swiper-container", {
   //close cart
   closeCart.onclick = function(){
     Cart.classList.remove('active')
-  };
+  }
+ 
+  ;
   // cart working
   // open view cart
 
