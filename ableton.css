@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 213e32badb7c6367ba11a33e42e8f9526d2d9f90
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -9,13 +6,8 @@
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
 }
-<<<<<<< HEAD
-.content {
-    display: none;
-}
-=======
 
->>>>>>> 213e32badb7c6367ba11a33e42e8f9526d2d9f90
+
 .loader {
     position: absolute;
     height: 100vh;
@@ -30,24 +22,17 @@
     transform: translate(-50%,-50%);
     color: gold;
     opacity: 1;
-<<<<<<< HEAD
     animation: fade 2s infinite;
 }
 
 
-=======
-    animation: fade 1s infinite ;
-}
 
->>>>>>> 213e32badb7c6367ba11a33e42e8f9526d2d9f90
+
+
 @keyframes fade {
   0%,100% { opacity: 0.3 }
   50% { opacity: 1 }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 213e32badb7c6367ba11a33e42e8f9526d2d9f90
     
 
 
@@ -1899,9 +1884,6 @@ header.sticky .submit2 {
 
 
 /* sidebar */
-<<<<<<< HEAD
-=======
-=======
 *{
     box-sizing: border-box;
     padding: 0;
@@ -3785,5 +3767,5 @@ header.sticky .submit2 {
 
 
 /* sidebar */
->>>>>>> f53588511dd67462e0882ef0b7099efc7bf67958
->>>>>>> 213e32badb7c6367ba11a33e42e8f9526d2d9f90
+
+
