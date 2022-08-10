@@ -5,7 +5,9 @@
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
 }
-
+.content {
+    display: none;
+}
 .loader {
     position: absolute;
     height: 100vh;
@@ -20,14 +22,14 @@
     transform: translate(-50%,-50%);
     color: gold;
     opacity: 1;
-    animation: fade 1s infinite ;
+    animation: fade 2s infinite;
 }
+
 
 @keyframes fade {
   0%,100% { opacity: 0.3 }
   50% { opacity: 1 }
 }
-
     
 
 
