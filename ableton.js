@@ -1,22 +1,27 @@
 // carousel
+let preloader = document.querySelector(".loader");
+window.addEventListener('load', function(){
+  preloader.style.display = 'none';
+});
+
 var swiper = new Swiper(".swiper-container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 20,
-      stretch: 0,
-      depth: 200,
-      modifier: 1,
-      slideShadows: true,
-    },
-    loop: true,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-  });
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: true,
+  },
+  loop: true,
+  autoplay: {
+  delay: 1500,
+  disableOnInteraction: false,
+  },
+});
   // carousel
   // stickybar
   window.addEventListener("scroll", function(){
@@ -57,3 +62,4 @@ var swiper = new Swiper(".swiper-container", {
     timerEl.textContent = 'STARTS IN' + ' ' +   minutes + ":" + seconds ;
     time--;
    }
+   
