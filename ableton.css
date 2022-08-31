@@ -180,7 +180,7 @@ header{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 100%;
+    width: 360px;
     max-height: 100%;
     padding: 20px;
     background: white;
@@ -240,7 +240,7 @@ header{
 
 .cart-title:hover::after{
     left: 0%;
-    width: 15%;
+    width: 50%;
 }
 .cart-sign{
     position: relative;
@@ -288,7 +288,7 @@ header{
 }
 .new-products:hover::after{
     left: 0%;
-    width: 35%;
+    width: 70%;
 }
 
 .cart-box {
@@ -674,6 +674,7 @@ header.sticky .submit2 {
     .navbar {
         padding: 15px;
     }
+    
     section{
         padding: 0rem 0 2rem;
     }
@@ -688,6 +689,18 @@ header.sticky .submit2 {
 @media (max-width : 400px){
     .navbar{
         padding: 11px;
+    }
+    .cart-view {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        background: white;
+        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+        transition: 0.3s;
+        overflow: hidden;
     }
     .container {
         margin: 0 auto;
@@ -870,7 +883,18 @@ header.sticky .submit2 {
     .shop-products {
         margin: 0rem !important;
     }
-    
+    .cart-view {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        background: white;
+        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+        transition: 0.3s;
+        overflow: hidden;
+    }
     .navbar .logo {
         margin-left: -40px;
     
@@ -955,6 +979,18 @@ header.sticky .submit2 {
 @media (max-width : 375px){
     .shop-products {
         margin: 0rem !important;
+    }
+    .cart-view {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        background: white;
+        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+        transition: 0.3s;
+        overflow: hidden;
     }
     .container {
         margin: 0 auto;
@@ -1043,6 +1079,18 @@ header.sticky .submit2 {
     @media (max-width : 500px){
         .navbar{
             padding: 11px;
+        }
+        .cart-view {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-height: 100%;
+            padding: 20px;
+            background: white;
+            box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+            transition: 0.3s;
+            overflow: hidden;
         }
         .product-img {
             width: 203px;
@@ -1226,6 +1274,18 @@ header.sticky .submit2 {
     .navbar{
         padding: 11px;
     }
+    .cart-view {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        background: white;
+        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+        transition: 0.3s;
+        overflow: hidden;
+    }
     .container {
         margin: 0 auto;
         width: 100%;
@@ -1404,6 +1464,18 @@ header.sticky .submit2 {
 @media (max-width : 700px){
     .navbar{
         padding: 11px;
+    }
+    .cart-view {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-height: 100%;
+        padding: 20px;
+        background: white;
+        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+        transition: 0.3s;
+        overflow: hidden;
     }
     .container {
         margin: 0 auto;
