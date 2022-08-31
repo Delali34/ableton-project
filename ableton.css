@@ -667,6 +667,51 @@ header.sticky .submit2 {
     align-items: center;
 
 }
+.footer{
+    margin-top: 100px;
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+.foot {
+    display: flex;
+    gap: 4%;
+    padding: 20px;
+    font-size: 10px;
+    justify-content: center;
+}
+.head{
+    font-weight: bold;
+}
+.downtext{
+    cursor: pointer;
+}
+.downtext:hover{
+    color: gold;
+}
+.contact{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    padding-bottom: 10px;
+}
+.getin h2{
+    font-weight: bold;
+}
+.contacts{
+    margin-left: 75px;
+}
+.contact i{
+    color: white;
+    font-size: 50px;
+}
+.contact i:hover{
+    color: gold;
+}
+.contact-icons{
+    display: flex;
+    gap: 3%;
+}
+
+
 
 
 /* responsiveness */
