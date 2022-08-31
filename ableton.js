@@ -203,6 +203,7 @@ var swiper = new Swiper(".swiper-container", {
       cartItems.append(cartShopBox);
       cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click', removeCartItem)
       cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged);
+      
     }
 
 
