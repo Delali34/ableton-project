@@ -686,18 +686,6 @@ header.sticky .submit2 {
     }
 }
 @media (max-width : 400px){
-    .cart-view {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 400px;
-        max-height: 100%;
-        padding: 20px;
-        background: white;
-        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-        transition: 0.3s;
-        overflow: hidden;
-    }
     .navbar{
         padding: 11px;
     }
@@ -968,18 +956,6 @@ header.sticky .submit2 {
     .shop-products {
         margin: 0rem !important;
     }
-    .cart-view {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 375px;
-        max-height: 100%;
-        padding: 20px;
-        background: white;
-        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-        transition: 0.3s;
-        overflow: hidden;
-    }
     .container {
         margin: 0 auto;
         width: 100%;
@@ -1067,18 +1043,6 @@ header.sticky .submit2 {
     @media (max-width : 500px){
         .navbar{
             padding: 11px;
-        }
-        .cart-view {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 500px;
-            max-height: 100%;
-            padding: 20px;
-            background: white;
-            box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-            transition: 0.3s;
-            overflow: hidden;
         }
         .product-img {
             width: 203px;
@@ -1262,18 +1226,6 @@ header.sticky .submit2 {
     .navbar{
         padding: 11px;
     }
-    .cart-view {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 600px;
-        max-height: 100%;
-        padding: 20px;
-        background: white;
-        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-        transition: 0.3s;
-        overflow: hidden;
-    }
     .container {
         margin: 0 auto;
         width: 100%;
@@ -1452,18 +1404,6 @@ header.sticky .submit2 {
 @media (max-width : 700px){
     .navbar{
         padding: 11px;
-    }
-    .cart-view {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 700px;
-        max-height: 100%;
-        padding: 20px;
-        background: white;
-        box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-        transition: 0.3s;
-        overflow: hidden;
     }
     .container {
         margin: 0 auto;
@@ -2629,9 +2569,6 @@ header.sticky .submit2 {
     }
 }
 @media (max-width : 400px){
-    .cart-view{
-        width: 400px;
-    }
     .navbar{
         padding: 11px;
     }
@@ -2907,9 +2844,6 @@ header.sticky .submit2 {
         height: 100vh;
         overflow: hidden;
     }
-    .cart-view{
-        width: 375px;
-    }
     .shop-products {
         margin: 0rem !important;
     }
@@ -3001,9 +2935,6 @@ header.sticky .submit2 {
         body.modal-open{
             height: 100vh;
             overflow: hidden;
-        }
-        .cart-view{
-            width: 500px;
         }
         .navbar{
             padding: 11px;
@@ -3191,9 +3122,6 @@ header.sticky .submit2 {
         height: 100vh;
         overflow: hidden;
     }
-    .cart-view{
-        width: 600px;
-    }
     .navbar{
         padding: 11px;
     }
@@ -3376,9 +3304,6 @@ header.sticky .submit2 {
     body.modal-open{
         height: 100vh;
         overflow: hidden;
-    }
-    .cart-view{
-        width: 700px;
     }
     .navbar{
         padding: 11px;
