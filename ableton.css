@@ -187,11 +187,12 @@ header{
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
     transition: 0.3s;
     overflow: hidden;
-}
-.cart-view:hover{
     overflow-y: scroll;
     overflow-x: hidden;
 }
+/* .cart-view:hover{
+    
+} */
 ::-webkit-scrollbar{
     width: 5px;
 }
