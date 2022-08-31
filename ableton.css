@@ -2835,6 +2835,10 @@ header.sticky .submit2 {
     }
 
 @media (max-width : 375px){
+    body.modal-open{
+        height: 100vh;
+        overflow: hidden;
+    }
     .shop-products {
         margin: 0rem !important;
     }
