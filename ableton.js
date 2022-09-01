@@ -49,8 +49,9 @@ var swiper = new Swiper(".swiper-container", {
 
   function viewCart(){
     document.body.style.overflow = "hidden";
+    
     cartView.classList.add('active')
-   
+    document.getElementById("cart-view").style.overflow = "scroll";
     };
     cartClosed.onclick = function(){
       cartView.classList.remove('active')

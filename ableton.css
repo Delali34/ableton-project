@@ -186,7 +186,8 @@ header{
     background: white;
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
     transition: 0.3s;
-    overflow: auto;
+    /* overflow: scroll; */
+    overflow-x: hidden;
 
 }
 .cart-view:hover{
