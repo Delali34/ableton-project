@@ -34,20 +34,27 @@ var swiper = new Swiper(".swiper-container", {
 
 //open menu
   addCart.onclick = function(){
+    document.body.style.overflow = "hidden";
     Cart.classList.add('active')
+    
+    
   };
   //close cart
   closeCart.onclick = function(){
     Cart.classList.remove('active')
+    document.body.style.overflow = "auto";
   };
   // menu working
   // open view cart
 
   function viewCart(){
+    document.body.style.overflow = "hidden";
     cartView.classList.add('active')
+   
     };
     cartClosed.onclick = function(){
       cartView.classList.remove('active')
+      document.body.style.overflow = "auto";
     };
 //  working cart
     if (document.readyState =='loading'){
@@ -193,9 +200,12 @@ var swiper = new Swiper(".swiper-container", {
                                       <div class="cart-product-title">${title}</div>
                                       <div class="cart-price">${price}</div>
                                       <input type="number" value="1" class="cart-quantity">
+                                      <hr>
                                       </div>
                                   <!-- delete item -->
                                   <i class="fa-solid fa-trash cart-remove"></i>
+                                  
+                          
       
       
       `;
