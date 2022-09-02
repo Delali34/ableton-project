@@ -750,10 +750,17 @@ header.sticky .submit2 {
         margin: 2rem !important;
     }
 }
-@media (max-width : 400px){
-    .navbar{
-        padding: 11px;
+@media(max-width : 355px){
+    .navbar .submit{
+        font-size: 8px;
+        width: 85px;
+        height: 30px;
     }
+}
+@media (max-width : 400px){
+    /* .navbar{
+        padding: 11px;
+    } */
     .cart-view {
         position: fixed;
         top: 0;
