@@ -82,6 +82,7 @@ header{
     /* background-color: black; */
     color: white;
     height: 100px;
+    gap: 3%;
     
 }
 .navbar .flex {
@@ -134,12 +135,14 @@ header{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     height: 35.33px;
-    width: 100px;
+    width: 150px;
     color: white;
+    
     
     /* margin:  -4px 15px;
     margin-top: -2px; */
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     background: black;
 
@@ -753,9 +756,9 @@ header.sticky .submit2 {
 }
 @media(max-width : 355px){
     .navbar .submit{
-        font-size: 8px;
-        width: 85px;
-        height: 30px;
+        font-size: 10px;
+        width: 100px;
+        height: 35px;
     }
 }
 @media (max-width : 400px){
