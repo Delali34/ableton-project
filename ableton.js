@@ -228,6 +228,7 @@ var swiper = new Swiper(".swiper-container", {
   function countcart(){
     total +=1;
     
+    
     document.querySelector('.num-amount').textContent = '('+ total +')'
    
     
