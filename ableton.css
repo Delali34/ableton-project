@@ -190,10 +190,7 @@ header{
     overflow-x: hidden;
 
 }
-.cart-view:hover{
-    /* overflow-y: scroll; */
-    overflow-x: hidden;
-}
+
 ::-webkit-scrollbar{
     width: 5px;
 }

@@ -52,6 +52,7 @@ var swiper = new Swiper(".swiper-container", {
     
     cartView.classList.add('active')
     document.getElementById("cart-view").style.overflow = "scroll";
+    
     };
     cartClosed.onclick = function(){
       cartView.classList.remove('active')
@@ -64,7 +65,8 @@ var swiper = new Swiper(".swiper-container", {
     else {
       ready()
     }
-    // functionality
+    
+        // functionality
     function ready (){
       // remove item
       let removeCartButtons = document.getElementsByClassName('cart-remove') 
@@ -99,23 +101,8 @@ var swiper = new Swiper(".swiper-container", {
       buttonClicked.parentElement.remove();
       updatetotal();
     }
-    // let Decrease = document.querySelector('#minus')
-    // let Increase = document.getElementById('#plus')
-    // let dispalyQuantity = document.getElementById('num')
-    // let CartPrice = document.querySelector('.cart-price')
-    // let totalPrice = document.querySelector('.total-price')
-    // let total = 0
-    // let first = 0
-    //  function subtract(){
-    //   if (first > 0){
-    //     first--;
-    //   }
-    //   dispalyQuantity.textContent = first
-    // };
-    //  function add(){
-    //   first +=1
-    //   dispalyQuantity.textContent = first
-    //  };
+   
+     
     
     
     // quantity chnages
@@ -204,7 +191,7 @@ var swiper = new Swiper(".swiper-container", {
                                       <hr>
                                       </div>
                                   <!-- delete item -->
-                                  <i class="fa-solid fa-trash cart-remove"></i>
+                                  <i class="fa-solid fa-trash cart-remove" onclick="countdec()"></i>
                                   
                           
       
@@ -231,3 +218,22 @@ var swiper = new Swiper(".swiper-container", {
     time--;
    }
    
+
+  let Decrease = document.getElementsByClassName('add-cart')
+  let Increase = document.getElementsByClassName('.cart-remove')
+ 
+
+  let total = 0
+  
+  function countcart(){
+    total +=1;
+    
+    document.querySelector('.num-amount').textContent = '('+ total +')'
+   
+    
+  }
+  function countdec(){
+    (total > 0)
+    total--;
+    document.querySelector('.num-amount').textContent = '('+ total +')'
+  }
