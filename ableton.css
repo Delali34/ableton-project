@@ -639,6 +639,11 @@ header.sticky .submit2 {
     padding: 10px;
     cursor: pointer;
 }
+.add-cart:hover{
+    opacity: 0.8;
+    background-color: gold;
+    color: black;
+}
 /* new products*/
 /* fashion section*/
 .sliders {
