@@ -103,6 +103,7 @@ header{
 .navbar .logo{
     display: flex;
     font-family: 'Raleway', sans-serif;
+    margin-left: -15px;
 }
 .navbar .logo i {
     padding: 8px 10px;
@@ -711,6 +712,17 @@ header.sticky .submit2 {
 .contact-icons{
     display: flex;
     gap: 3%;
+}
+.help{
+    font-size: 12px;
+}
+.last-one{
+    background-color: black;
+    color: white;
+}
+.finalinfo{
+    text-align: center;
+    font-size: 10px;
 }
 
 
