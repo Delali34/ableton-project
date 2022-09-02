@@ -641,7 +641,7 @@ header.sticky .submit2 {
 }
 .add-cart:hover{
     opacity: 0.8;
-    background-color: gold;
+    background-color: #dadbf1;
     color: black;
 }
 /* new products*/
