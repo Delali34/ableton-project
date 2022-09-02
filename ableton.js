@@ -177,10 +177,10 @@ var swiper = new Swiper(".swiper-container", {
       var cartItems = document.getElementsByClassName('cart-before')[0]
       var cartItemNames = cartItems.getElementsByClassName('cart-product-title')
       for (var i = 0; i < cartItemNames.length; i++){
-        if (cartItemNames[i].innerText == title){
-          alert('You have already added this item to cart')
-          return;
-        }  
+        // if (cartItemNames[i].innerText == title){
+        //   // alert('You have already added this item to cart')
+        //   return;
+        // }  
       }
         var productBoxContent = `
                                   <img src="${productImg}" alt="">
@@ -233,7 +233,7 @@ var swiper = new Swiper(".swiper-container", {
     
   }
   function countdec(){
-    (total > 0)
+    if(total > 0)
     total--;
     document.querySelector('.num-amount').textContent = '('+ total +')'
   }
