@@ -82,9 +82,11 @@ header{
     /* background-color: black; */
     color: white;
     height: 100px;
+    
 }
 .navbar .flex {
     justify-content: space-between;
+    align-items: center;
 }
 .container {
     max-width: 1100px;
@@ -95,7 +97,7 @@ header{
 .flex{
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     height: 100%;
 }
 .navbar .logo{
@@ -114,13 +116,13 @@ header{
     color: white;
 }
 
-
 .navbar ul {
     display: flex;
+    align-items: center;
 }
 .navbar a{
     padding: 10px;
-    margin: 0 15px;
+    /* margin: 0 15px; */
     font-size: 22px;
     
 }
@@ -130,12 +132,12 @@ header{
 .navbar .submit {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
-    height: 39.33px;
+    height: 37.33px;
     color: white;
     padding: 10px;
-    margin:  -4px 15px;
-    margin-top: -2px;
-    font-size: 18px;
+    /* margin:  -4px 15px;
+    margin-top: -2px; */
+    font-size: 13px;
     cursor: pointer;
     background: black;
 
@@ -148,7 +150,7 @@ header{
     height: 47.33px;
     color: black;
     padding: 10px;
-    margin:  -4px 15px;
+    /* margin:  -4px 15px; */
     font-size: 22px;
     cursor: pointer;
 }.sign-in {
