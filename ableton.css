@@ -135,14 +135,14 @@ header{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     height: 35.33px;
-    width: 150px;
+    width: 130px;
     color: white;
     margin-bottom: 4px;
     
     
     /* margin:  -4px 15px;
     margin-top: -2px; */
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     cursor: pointer;
     background: black;
