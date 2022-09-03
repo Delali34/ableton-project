@@ -137,6 +137,7 @@ header{
     height: 35.33px;
     width: 150px;
     color: white;
+    margin-bottom: 4px;
     
     
     /* margin:  -4px 15px;
@@ -145,6 +146,7 @@ header{
     font-weight: 600;
     cursor: pointer;
     background: black;
+    margin-top: 12px;
 
     
 }
@@ -156,9 +158,21 @@ header{
     color: black;
     padding: 10px;
     /* margin:  -4px 15px; */
+    
     font-size: 22px;
     cursor: pointer;
-}.sign-in {
+}
+ .addeditem{
+    padding-top: 5px;
+    text-align: center;
+    font-weight: 300;
+    color: gold;
+    
+ }
+
+
+
+.sign-in {
     border: 1px solid gold;
     border-radius: 10px;
     background-color: gold;
@@ -182,7 +196,7 @@ header{
     padding: 20px;
     background: white;
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-    transition: 0.3s;
+    transition: 0.3s ;
 }
 .cart-view {
     position: fixed;
