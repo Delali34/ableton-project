@@ -221,7 +221,8 @@ var swiper = new Swiper(".swiper-container", {
 
   let Decrease = document.getElementsByClassName('add-cart')
   let Increase = document.getElementsByClassName('.cart-remove')
- 
+  let Addsuccess = document.querySelector('.addeditem')
+  
 
   let total = 0
   
@@ -230,11 +231,25 @@ var swiper = new Swiper(".swiper-container", {
     
     
     document.querySelector('.num-amount').textContent = '('+ total +')'
-   
+    
+    Addsuccess.textContent = "+ Item added succesfully"
     
   }
   function countdec(){
     if(total > 0)
     total--;
     document.querySelector('.num-amount').textContent = '('+ total +')'
+   
   }
+  // let addsuccess = document.querySelector('.add-cart')
+  // let Addsuccess = document.querySelector('.addeditem')
+
+  // addsuccess.onclick= function(){
+    
+  // }
+  // setTimeout(addsuccess, 3000)
+
+  
+  // scrool effect
+  
+  
